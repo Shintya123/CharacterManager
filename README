@@ -1,0 +1,104 @@
+Character Manager merupakan aplikasi berbasis Java yang dibuat untuk memenuhi tugas TP3 AP3 Belajar Praktik. Aplikasi ini digunakan untuk merepresentasikan dan mengelola data karakter menggunakan konsep Object-Oriented Programming (OOP).
+
+Pada project ini diterapkan konsep Encapsulation, Constructor, Getter, Setter, Enum, serta pengembangan fitur tambahan berupa Mana dan pengecekan status karakter menggunakan method isAlive().
+Fitur yang dikembangkan dalam Character Manager meliputi:
+- Membuat objek karakter menggunakan constructor.
+- Menggunakan empat jenis karakter: WARRIOR, MAGE, ARCHER, dan HEALER.
+- Menggunakan atribut private untuk menerapkan Encapsulation.
+- Menggunakan Getter dan Setter untuk mengakses serta mengubah atribut.
+- Menghitung HP dan Attack Power berdasarkan level karakter.
+- Melakukan perubahan level atau Level Up.
+- Menambahkan atribut Mana pada karakter.
+- Melakukan validasi agar nilai Mana tidak negatif.
+- Memeriksa kondisi karakter menggunakan method isAlive().
+- Menampilkan informasi karakter menggunakan method toString().
+- Bahasa Pemrograman: Java
+- JDK: JDK 21
+- Code Editor: Visual Studio Code
+- Java Extension: Extension Pack for Java
+```
+CharacterManager/
+│
+├── src/
+│   └── com/
+│       └── unpri/
+│           └── charactermanager/
+│               ├── model/
+│               │   ├── Character.java
+│               │   └── CharacterType.java
+│               │
+│               └── Main.java
+│
+├── screenshot/
+│   └── output.png
+│
+└── README.md
+```
+Berikut merupakan dokumentasi hasil eksekusi program Character Manager.
+
+Screenshot menampilkan hasil pembuatan tiga karakter, proses Level Up, serta pengujian fitur Mana dan isAlive().
+- Nama Lengkap: SHINTYA WULANDARI TOGATOROP
+- NIM: 253303621295
+- Kelas: PAGI B
+- Mata Kuliah: Java Visual SIH-6406
+- Dosen Pengampu: DR. EVTA INDRA, S.Kom., M.Kom.
+Dokumentasi analisis desain dan ekosistem Java untuk Bagian D dapat dilihat melalui Google Docs berikut:
+
+Link Google Docs:
+Character Manager merupakan aplikasi berbasis Java yang dibuat untuk memenuhi tugas TP3 AP3 Belajar Praktik. Aplikasi ini digunakan untuk merepresentasikan dan mengelola data karakter menggunakan konsep Object-Oriented Programming (OOP).
+
+Pada project ini diterapkan konsep Encapsulation, Constructor, Getter, Setter, Enum, serta pengembangan fitur tambahan berupa Mana dan pengecekan status karakter menggunakan method isAlive().
+Fitur yang dikembangkan dalam Character Manager meliputi:
+- Membuat objek karakter menggunakan constructor.
+- Menggunakan empat jenis karakter: WARRIOR, MAGE, ARCHER, dan HEALER.
+- Menggunakan atribut private untuk menerapkan Encapsulation.
+- Menggunakan Getter dan Setter untuk mengakses serta mengubah atribut.
+- Menghitung HP dan Attack Power berdasarkan level karakter.
+- Melakukan perubahan level atau Level Up.
+- Menambahkan atribut Mana pada karakter.
+- Melakukan validasi agar nilai Mana tidak negatif.
+- Memeriksa kondisi karakter menggunakan method isAlive().
+- Menampilkan informasi karakter menggunakan method toString().
+- Bahasa Pemrograman: Java
+- JDK: JDK 21
+- Code Editor: Visual Studio Code
+- Java Extension: Extension Pack for Java
+```
+CharacterManager/
+│
+├── src/
+│   └── com/
+│       └── unpri/
+│           └── charactermanager/
+│               ├── model/
+│               │   ├── Character.java
+│               │   └── CharacterType.java
+│               │
+│               └── Main.java
+│
+├── screenshot/
+│   └── ![alt text](image.png)output.png
+│
+└── README.md
+```
+Berikut merupakan dokumentasi hasil eksekusi program Character Manager.
+
+Screenshot menampilkan hasil pembuatan tiga karakter, proses Level Up, serta pengujian fitur Mana dan isAlive().
+- Nama Lengkap: SHINTYA WULANDARI TOGATOROP
+- NIM: 253303621295
+- Kelas: PAGI B
+- Mata Kuliah: Java Visual SIH-6406
+- Dosen Pengampu: DR. EVTA INDRA, S.Kom., M.Kom.
+Dokumentasi analisis desain dan ekosistem Java untuk Bagian D dapat dilihat melalui Google Docs berikut:
+
+Link Google Docs: https://docs.google.com/document/d/1edhhAud6sHCkEDx_5WUBrPZcrv_R6AjY/edit?usp=drive_link&ouid=117007323148153703738&rtpof=true&sd=true8. Kesimpulan
+Melalui project Character Manager ini, saya mempelajari penerapan konsep dasar Object-Oriented Programming (OOP) menggunakan bahasa Java. Saya juga memahami penggunaan constructor, encapsulation, enum, getter, setter, serta validasi data.
+
+Pengembangan fitur Mana dan isAlive() memberikan pengalaman dalam memperluas kemampuan class tanpa mengabaikan prinsip pemrograman berorientasi objek.
+
+Project ini menjadi dasar untuk pengembangan aplikasi Character Manager pada tahap berikutnya.
+Melalui project Character Manager ini, saya mempelajari penerapan konsep dasar Object-Oriented Programming (OOP) menggunakan bahasa Java. Saya juga memahami penggunaan constructor, encapsulation, enum, getter, setter, serta validasi data.
+
+Pengembangan fitur Mana dan isAlive() memberikan pengalaman dalam memperluas kemampuan class tanpa mengabaikan prinsip pemrograman berorientasi objek.
+
+Project ini menjadi dasar untuk pengembangan aplikasi Character Manager pada tahap berikutnya.
