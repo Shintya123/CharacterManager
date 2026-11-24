@@ -231,10 +231,97 @@ Link Google Docs:
 
 [TP8](https://docs.google.com/document/d/18pYypg2MKJxcw0luj9x-QpVEDYb7qFGA/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)
 
-## 7. Kesimpulan
+## 7. Kes--00
+mpulan
 
 Aplikasi Character Manager berhasil dikembangkan menggunakan bahasa pemrograman Java dengan menerapkan konsep Object-Oriented Programming (OOP).
 
 Pengembangan aplikasi mencakup pengelolaan data karakter, fitur CRUD, serta tampilan GUI menggunakan Java Swing. Selain itu, fitur statistik rata-rata level ditambahkan untuk menampilkan informasi karakter secara lebih ringkas.
 
 Perhitungan rata-rata dilakukan pada bagian Model, sedangkan MainWindow bertugas menampilkan hasil melalui JLabel. Dengan demikian, aplikasi menerapkan prinsip pemisahan tanggung jawab dalam MVC.
+
+# Character Manager — TP10 (Java Visual SIH-6406)
+
+## 1. Deskripsi Project
+
+Character Manager merupakan aplikasi berbasis Java yang dibuat untuk memenuhi tugas TP3 AP3 Belajar Praktik pada mata kuliah Java Visual SIH-6406.
+
+Aplikasi ini digunakan untuk mengelola dan menampilkan daftar karakter menggunakan konsep Object-Oriented Programming (OOP). Pada Sprint #4, aplikasi dikembangkan menggunakan Java Swing untuk membuat tampilan Graphical User Interface (GUI) yang lebih menarik dan interaktif.
+
+Project ini menerapkan konsep Encapsulation, Constructor, Getter, Setter, Enum, Composition, ArrayList, serta Model-View-Controller (MVC). Selain itu, aplikasi menggunakan AppTheme sebagai pusat pengaturan warna, font, dan tampilan kartu karakter.
+
+## 2. Fitur Program
+
+Fitur yang terdapat dalam aplikasi Character Manager:
+
+- Membuat objek karakter.
+- Menentukan jenis karakter menggunakan Enum.
+- Mengatur level karakter.
+- Menghitung HP dan Attack Power.
+- Menggunakan Getter dan Setter.
+- Mengelola daftar karakter menggunakan ArrayList.
+- Menambahkan karakter menggunakan `addCharacter()`.
+- Mencegah penambahan karakter dengan nama duplikat.
+- Mencari karakter menggunakan `findByName()`.
+- Menghapus karakter menggunakan `removeCharacter()`.
+- Menghitung jumlah karakter menggunakan `getTotalCharacters()`.
+- Menghitung rata-rata level menggunakan `getAverageLevel()`.
+- Menampilkan daftar karakter menggunakan Java Swing.
+- Menampilkan setiap karakter dalam kartu menggunakan JLabel.
+- Menggunakan GridLayout untuk menyusun tampilan karakter.
+- Menggunakan AppTheme untuk mengatur warna dan font aplikasi.
+- Menampilkan statistik rata-rata level karakter.
+
+## 3. Screenshot Output Program
+
+Berikut merupakan dokumentasi proses menjalankan aplikasi Character Manager v0.4 melalui terminal Visual Studio Code.
+
+![output](image-3.png)
+
+Hasil pengujian yang ditampilkan:
+- Karakter Arjuna berhasil ditambahkan.
+- Karakter Merlin berhasil ditambahkan.
+- Karakter Athena berhasil ditambahkan.
+
+Catatan: Screenshot terminal menunjukkan proses penambahan karakter. Screenshot tampilan GUI perlu ditambahkan setelah aplikasi berhasil dijalankan tanpa error.
+
+## 4. Struktur Folder Project
+
+```text
+CharacterManager/
+│
+├── src/
+│   └── com/
+│       └── unpri/
+│           └── charactermanager/
+│               │
+│               ├── Main.java
+│               │
+│               ├── model/
+│               │   ├── Character.java
+│               │   ├── CharacterType.java
+│               │   └── CharacterManager.java
+│               │
+│               └── view/
+│                   ├── MainWindow.java
+│                   └── AppTheme.java
+│
+├── docs/
+│   └── screenshot-output.png
+│
+└── README.md
+```
+
+## 5. Identitas Mahasiswa
+
+- Nama Lengkap: Shintya Wulandari Togatorop
+- NIM: 253303621295
+- Mata Kuliah: Java Visual SIH-6406
+- Tugas: TP3 AP3 Belajar Praktik
+- Sprint: Sprint #4
+
+## 6. Dokumentasi
+
+Link Google Docs:
+
+[tp10](https://docs.google.com/document/d/1IAlHO5KRRHe2HafUHYF2cveF6CaUUOAT/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)

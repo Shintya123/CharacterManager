@@ -1,4 +1,6 @@
 
+package com.unpri.charactermanager;
+
 import com.unpri.charactermanager.model.Character;
 import com.unpri.charactermanager.model.CharacterType;
 import com.unpri.charactermanager.model.CharacterManager;
@@ -7,11 +9,13 @@ import com.unpri.charactermanager.view.MainWindow;
 import javax.swing.SwingUtilities;
 
 public class Main {
+
     public static void main(String[] args) {
 
-        // 1. Siapkan data karakter
+        // 1. Membuat objek CharacterManager
         CharacterManager manager = new CharacterManager();
 
+        // 2. Menambahkan data karakter
         manager.addCharacter(
             new Character("Arjuna", CharacterType.WARRIOR, 5)
         );
@@ -24,10 +28,10 @@ public class Main {
             new Character("Athena", CharacterType.ARCHER, 4)
         );
 
-        // 2. Hitung rata-rata level dari Model
+        // 3. Menghitung rata-rata level karakter
         double averageLevel = manager.getAverageLevel();
 
-        // 3. Jalankan GUI di Event Dispatch Thread
+        // 4. Menjalankan GUI
         SwingUtilities.invokeLater(() -> {
 
             MainWindow window = new MainWindow(
