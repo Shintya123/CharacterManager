@@ -75,7 +75,11 @@ public double getAverageLevel() {
     for (Character c : characterList) {
         totalLevel += c.getLevel();
     }
-
+if (characterList.size() >= 20) {
+    throw new IllegalArgumentException(
+        "Jumlah karakter maksimal adalah 20"
+    );
+}
     return (double) totalLevel / characterList.size();
 }
 

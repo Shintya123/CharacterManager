@@ -63,6 +63,13 @@ public class Character {
         this.level = level;
         this.hitPoints = calculateBaseHP();      // statistik dihitung ULANG setiap level berubah
         this.attackPower = calculateBaseAttack();
+
+if (type == CharacterType.MAGE && level > 60) {
+    throw new IllegalArgumentException(
+        "Karakter MAGE tidak boleh memiliki level di atas 60"
+    );
+}
+
     }
 
     // ===== toString(): representasi teks object, berguna untuk debugging =====

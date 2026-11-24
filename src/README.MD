@@ -421,3 +421,70 @@ Melalui TP12, aplikasi Character Manager dikembangkan dengan memperhatikan struk
 Link Google Docs:
 
 [tp12](https://docs.google.com/document/d/1gE30_5UEa4Av0FmvYBtIKqcn0SLy1VtE/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)
+
+
+# TP14 — Komponen Input & Validasi
+
+## Character Manager Sprint #6
+
+### A. Implementasi Form Input
+
+Aplikasi menggunakan tiga komponen input:
+- JTextField untuk memasukkan nama karakter.
+- JComboBox untuk memilih role karakter.
+- JSpinner untuk menentukan level karakter dari 1 sampai 99.
+
+Validasi dilakukan sebelum data dikirim ke Model.
+Nama dibersihkan menggunakan trim() dan diperiksa
+berdasarkan kelengkapan, panjang, format, serta keunikan.
+
+### B. Validasi Tambahan
+
+1. MAGE tidak boleh memiliki level di atas 60.
+   Aturan ditempatkan pada Model agar berlaku untuk
+   semua sumber data.
+
+2. Nama tidak boleh memiliki spasi berulang.
+   Aturan ditempatkan pada View karena berkaitan
+   dengan format input pengguna.
+
+3. Jumlah karakter maksimal 20.
+   Aturan ditempatkan pada Model agar batas jumlah
+   data tetap terjaga.
+
+### C. Tabel Pengujian
+
+| No | Input | Hasil Diharapkan | Hasil Nyata | Lapisan |
+|---|---|---|---|---|
+| 1 | Nama kosong | Ditolak | Isi setelah tes | View |
+| 2 | Nama terlalu pendek | Ditolak | Isi setelah tes | View |
+| 3 | Nama angka | Ditolak | Isi setelah tes | View |
+| 4 | Nama duplikat | Ditolak | Isi setelah tes | Model |
+| 5 | Spasi berulang | Ditolak | Isi setelah tes | View |
+| 6 | MAGE level 60 | Diterima | Isi setelah tes | Model |
+| 7 | MAGE level 61 | Ditolak | Isi setelah tes | Model |
+| 8 | Karakter ke-21 | Ditolak | Isi setelah tes | Model |
+
+### D. Screenshot
+
+![0UT PUT](image-7.png)
+
+### E. Struktur Panel dan Kompromi Sementara
+
+CharacterFormPanel bertugas menerima input dan melakukan
+validasi awal sebelum data dikirim ke CharacterManager.
+CharacterManager mengelola data karakter dan Character
+menjaga aturan bisnis. MainWindow menampilkan daftar
+karakter dan memperbarui tampilan melalui refreshList().
+
+ActionListener yang digunakan masih sederhana dan
+pemanggilan manager.addCharacter() masih dilakukan
+langsung dari View. Pendekatan ini digunakan sebagai
+kompromi sementara agar proses input dan validasi dapat
+berjalan. Pada pengembangan berikutnya, pemisahan
+tanggung jawab dapat diperbaiki melalui pola Controller.
+
+### F. Google Docs — Bagian D
+
+Masukkan link Google Docs analisis TP14 di sini:
+[TP14](https://docs.google.com/document/d/1qm_9ZPBCe5YHnQ5VJYWO9k3ZIH9q9pxa/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)

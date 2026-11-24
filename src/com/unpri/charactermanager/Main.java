@@ -12,10 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // 1. Membuat objek CharacterManager
+        // 1. Membuat CharacterManager
         CharacterManager manager = new CharacterManager();
 
-        // 2. Menambahkan 8 karakter untuk menguji scrollbar
+        // 2. Menambahkan 8 karakter
         manager.addCharacter(new Character("Arjuna", CharacterType.WARRIOR, 5));
         manager.addCharacter(new Character("Merlin", CharacterType.MAGE, 3));
         manager.addCharacter(new Character("Athena", CharacterType.ARCHER, 4));
@@ -25,13 +25,13 @@ public class Main {
         manager.addCharacter(new Character("Bima", CharacterType.WARRIOR, 8));
         manager.addCharacter(new Character("Circe", CharacterType.MAGE, 2));
 
-        // 3. Menjalankan GUI
+        // 3. Menjalankan GUI di Event Dispatch Thread
         SwingUtilities.invokeLater(() -> {
 
-            MainWindow window = new MainWindow(
-                manager.getAllCharacters()
-            );
+            // Mengirim CharacterManager ke MainWindow
+            MainWindow window = new MainWindow(manager);
 
+            // Menampilkan jendela
             window.setVisible(true);
         });
     }
