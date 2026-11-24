@@ -325,3 +325,99 @@ CharacterManager/
 Link Google Docs:
 
 [tp10](https://docs.google.com/document/d/1IAlHO5KRRHe2HafUHYF2cveF6CaUUOAT/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)
+
+
+## 7. TP12 — Layout, Nested Panel, dan Resize
+
+### 7.1 Deskripsi TP12
+
+Pada TP12, aplikasi Character Manager dikembangkan dengan memperhatikan struktur layout dan panel bersarang (Nested Panel) menggunakan Java Swing.
+
+Tujuan pengembangan ini adalah membuat tampilan aplikasi lebih teratur, memudahkan pengelolaan komponen GUI, serta memastikan tampilan tetap nyaman digunakan ketika ukuran jendela diperbesar atau diperkecil.
+
+### 7.2 Wireframe Tampilan Aplikasi
+
+Berikut merupakan rancangan wireframe aplikasi Character Manager:
+
+```text
++------------------------------------------+
+|           CHARACTER MANAGER              |
++------------------------------------------+
+|                                          |
+|              DAFTAR KARAKTER             |
+|                                          |
+|  +------------------------------------+  |
+|  | Arjuna | WARRIOR | Lv.5             |  |
+|  +------------------------------------+  |
+|                                          |
+|  +------------------------------------+  |
+|  | Merlin | MAGE | Lv.3                |  |
+|  +------------------------------------+  |
+|                                          |
+|  +------------------------------------+  |
+|  | Athena | ARCHER | Lv.4              |  |
+|  +------------------------------------+  |
+|                                          |
+|             SCROLLBAR                   |
+|                                          |
++------------------------------------------+
+|             INFORMASI                    |
++------------------------------------------+
+```
+
+Wireframe ini menggambarkan rancangan susunan komponen aplikasi sebelum ditampilkan dalam GUI.
+
+### 7.3 Screenshot Aplikasi
+
+Berikut dokumentasi tampilan aplikasi Character Manager pada pengujian TP12.
+
+**Screenshot 1 — Tampilan Awal**
+
+Menampilkan aplikasi ketika pertama kali dijalankan.
+
+![Tampilan Awal](image-4.png)
+
+**Screenshot 2 — Tampilan Setelah Resize**
+
+Menampilkan perubahan tampilan aplikasi ketika ukuran jendela diperbesar atau diperkecil.
+
+![Tampilan Diperbesar](image-5.png)
+
+**Screenshot 3 — Pengujian Scrollbar**
+
+Menampilkan daftar karakter ketika seluruh kartu melebihi tinggi area tampilan.
+
+![Pengujian Scrollbar](image-6.png)
+
+Catatan: Ganti gambar di atas dengan screenshot hasil pengujian sebenarnya.
+
+### 7.4 Tabel Pengamatan Resize
+
+Pengujian dilakukan untuk mengetahui perilaku komponen aplikasi ketika ukuran jendela berubah.
+
+| No. | Pengujian | Prediksi | Hasil Pengamatan |
+|---|---|---|---|
+| 1 | Ukuran jendela diperbesar | Komponen menyesuaikan ruang yang tersedia | Isi sesuai hasil pengujian |
+| 2 | Ukuran jendela diperkecil | Komponen tetap tersusun dengan baik | Isi sesuai hasil pengujian |
+| 3 | Jumlah karakter bertambah | Scrollbar muncul jika konten melebihi viewport | Isi sesuai hasil pengujian |
+| 4 | Scroll ke bawah | Karakter berikutnya dapat dilihat | Isi sesuai hasil pengujian |
+
+### 7.5 Penjelasan Struktur Nested Panel
+
+Struktur aplikasi Character Manager menggunakan konsep Nested Panel, yaitu panel yang ditempatkan di dalam panel lainnya. JFrame berfungsi sebagai jendela utama yang menampung panel utama sebagai tempat penyusunan komponen aplikasi. Panel utama dapat dibagi menjadi beberapa panel tambahan untuk memisahkan bagian judul, daftar karakter, dan informasi statistik. Dengan struktur tersebut, setiap bagian aplikasi lebih mudah diatur dan dikembangkan tanpa mengganggu bagian lainnya.
+
+### 7.6 Alasan Penggunaan Panel Tambahan dan Layout
+
+Panel tambahan digunakan untuk memisahkan komponen berdasarkan fungsinya agar tampilan aplikasi lebih terorganisir dan mudah diperbaiki. Penggunaan JPanel juga memudahkan penerapan layout yang berbeda pada setiap bagian aplikasi.
+
+Layout Manager dipilih agar ukuran dan posisi komponen dapat menyesuaikan perubahan ukuran jendela. Penggunaan setLayout(null) dan setBounds() tidak dipilih karena posisi komponen harus diatur secara manual dan kurang fleksibel ketika ukuran jendela berubah.
+
+### 7.7 Kesimpulan TP12
+
+Melalui TP12, aplikasi Character Manager dikembangkan dengan memperhatikan struktur panel bersarang, penggunaan Layout Manager, dan pengujian resize. Pengujian ini membantu memastikan komponen GUI tersusun dengan lebih rapi dan daftar karakter dapat ditampilkan dengan bantuan scrollbar ketika jumlah karakter bertambah.
+
+### 7.8 Dokumentasi Google Docs — Bagian D
+
+Link Google Docs:
+
+[tp12](https://docs.google.com/document/d/1gE30_5UEa4Av0FmvYBtIKqcn0SLy1VtE/edit?usp=drivesdk&ouid=117007323148153703738&rtpof=true&sd=true)

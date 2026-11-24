@@ -1,10 +1,10 @@
 package com.unpri.charactermanager.view;
 
-import java.awt.Color;                       // kelas warna AWT
-import java.awt.Font;                        // kelas font AWT
-import javax.swing.BorderFactory;            // pabrik border
-import javax.swing.border.Border;            // tipe objek border
-import com.unpri.charactermanager.model.CharacterType; // enum dari Model (View boleh membaca Model)
+import com.unpri.charactermanager.model.CharacterType;                       // kelas warna AWT
+import java.awt.Color;                        // kelas font AWT
+import java.awt.Font;            // pabrik border
+import javax.swing.BorderFactory;            // tipe objek border
+import javax.swing.border.Border; // enum dari Model (View boleh membaca Model)
 
 /**
  * Pusat gaya tampilan Character Manager.
@@ -17,6 +17,8 @@ public final class AppTheme {
     public static final Color TEXT_MAIN  = Color.decode("#dfe6e9"); // teks utama: abu terang
     public static final Color TEXT_LIGHT = Color.WHITE;             // teks di atas kartu berwarna
     public static final Color GOLD       = Color.decode("#fdcb6e"); // aksen untuk karakter level tinggi
+public static final Color BG_STATUS  = Color.decode("#0d0d1a"); // latar bar status: lebih gelap
+public static final Color TEXT_MUTED = Color.decode("#9d9dbf"); // teks sekunder / metadata
 
     // ---------- Font ----------
     public static final Font FONT_TITLE = new Font("SansSerif", Font.BOLD, 22);   // judul layar
